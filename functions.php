@@ -50,7 +50,8 @@ if ( ! function_exists( 'photo_muxed_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'photo-muxed' ),
+				'header' => esc_html__( 'Top Menu', 'photo-muxed' ),
+				'footer' => esc_html__( 'Footer Menu', 'photo-muxed' ),
 			)
 		);
 
@@ -180,3 +181,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Disable Gutenberg
+ */
+add_filter('use_block_editor_for_post', '__return_false', 10);

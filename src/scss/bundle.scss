@@ -28,5 +28,8 @@ Use it to make something cool, have fun, and share what you've learned.
 /* Import variables and mixins. */
 @import "abstracts/abstracts";
 
+/* Import components. */
+@import "components/components";
+
 /* Import Pages Styles */
 @import "pages/home";

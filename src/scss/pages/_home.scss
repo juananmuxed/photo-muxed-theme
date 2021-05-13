@@ -1,5 +1,16 @@
-body {
-    background-color: $light;
-    color: $dark;
-    font-family: $font-basic
+body.home {
+    main {
+        .background-slider {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: -10;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
