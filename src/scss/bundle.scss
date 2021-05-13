@@ -1,0 +1,32 @@
+/*!
+Theme Name: Photo MuXeD
+Theme URI: http://muxed.es
+Author: MuXeD
+Author URI: http://muxed.es
+Description: Simple Portfolio Photo
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: MIT
+License URI: LICENSE
+Text Domain: photo-muxed
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Generic
+	- Abstract
+
+--------------------------------------------------------------*/
+
+/* Import variables and mixins. */
+@import "abstracts/abstracts";
+
+/* Import Pages Styles */
+@import "pages/home";
