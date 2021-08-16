@@ -13,20 +13,22 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'photo-muxed' ) ); ?>">
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'photo-muxed' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'photo-muxed' ), 'photo-muxed', '<a href="https://muxed.es/">MuXeD</a>' );
+				printf( esc_html__( 'Design with ❤️ by %1$s', 'photo-muxed' ), '<a href="https://muxed.es/" target="_blank">MuXeD</a>' );
 				?>
 		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<nav id="site-navigation" class="footer-navigation">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'footer',
+					'menu_id'        => 'footer-nav-ul',
+				)
+			);
+			?>
+		</nav>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 

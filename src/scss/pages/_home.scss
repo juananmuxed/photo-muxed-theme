@@ -1,16 +1,73 @@
 body.home {
-    main {
-        .background-slider {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-            z-index: -10;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+    .background-slider {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: -10;
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            opacity: 0;
+            &.current {
+                opacity: 1;
+                .content {
+                    opacity: .7;
+                }
+            }
+            .content {
+                position: absolute;
+                padding: $list-h-space;
+                bottom: 12vh;
+                right: $list-h-space;
+                text-align: right;
+                width: 20%;
+                background: $light;
+                opacity: 0;
+            }
+        }
+    }
+    .empty-slides {
+        height: 100vh;
+        width: 100vw;
+        font-size: $font-h1;
+        color: $info;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50vh; 
+        text-transform: uppercase;
+        position: fixed;
+    }
+    .buttons-slider {
+        position: fixed;
+        width: 100%;
+        height: $button-lg;
+        bottom: 32vh;
+        display: flex;
+        justify-content: space-between;
+        .left, .right {
+            cursor: pointer;
+            width: $button-lg;
+            background: $light;
+            opacity: .6;
+            border-radius: 50%;
+            &:hover {
+                opacity: .9;
+            }
+            .dashicons {
+                font-size: $button-lg;
+            }
+        }
+        .left {
+            margin-left: $padding-lg;
+        }
+        .right {
+            margin-right: $padding-lg;
         }
     }
 }

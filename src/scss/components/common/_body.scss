@@ -1,0 +1,14 @@
+// General page Body
+body {
+    background-color: $light;
+    color: $dark;
+    font-family: $font-basic;
+    margin: 0;
+    main.site-main{
+        display: flex;
+        margin-bottom:  $space-md;
+        &.reverse-menu{
+            flex-direction: row-reverse
+        }
+    }
+}

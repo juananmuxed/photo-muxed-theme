@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin')
 const IgnoreEmitPlugin = require('ignore-emit-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
-const finalPath = path.resolve(__dirname, 'dist')
+const finalPath = path.resolve(__dirname, 'dev')
 
 const fs = require('fs');
 
@@ -24,7 +24,8 @@ module.exports = {
     mode: 'development',
     entry: entry,
     output: {
-        filename: 'js/[name].js'
+        filename: 'js/[name].js',
+        path: finalPath
     },
     module: {
         rules: [

@@ -1,0 +1,12 @@
+div.archive {
+    width: 80%;
+    padding: 0 $padding-lg;
+    h1, h2 {
+        font-weight: 100;
+        font-size: $font-h1;
+        margin: $padding-sm 0;
+    }
+    .archive-description {
+        margin-bottom: 1rem;
+    }
+}

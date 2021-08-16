@@ -1,0 +1,38 @@
+.grid-masonry {
+    columns: 3 320px;
+    column-gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    .grid-item {
+        margin: 0 1.5rem 1.5rem 0;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: auto;
+            transition: all .2s ease-in-out;
+        }
+        .entry-content {
+            position: absolute;
+            transform: translateY(-100%);
+            background: $light;
+            padding: $padding-sm $padding-lg;
+            opacity: .7;
+            h2, h3 {
+                margin: 0;
+                font-weight: 100;
+            }
+            p {
+                font-style: italic;
+                max-width: 320px;
+                font-size: $font-tiny;
+            }
+        }
+        &:hover {
+            img {
+                opacity: .4;
+            }
+        }
+    }
+}

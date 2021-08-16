@@ -1,13 +1,13 @@
-// Header
-header {
+
+
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background: $light;
-    padding-top: 20px;
-    padding-bottom: $list-h-space;
+    bottom: 0;
     width: 100%;
+    background-color: $light;
     opacity: .8;
     a {
         text-decoration: none;
@@ -16,19 +16,7 @@ header {
             color: $gray-600;
         }
     }
-    .site-branding{
-        margin-left: 2%;
-        text-transform: uppercase;
-        .site-title {
-            font-size: $font-h1;
-            display: block;
-            font-weight: $font-bold;
-        }
-        img.custom-logo{
-            max-height: 100px;
-        }
-    }
-    .main-navigation {
+    .footer-navigation {
         margin-right: 2%;
         ul {
             list-style-type: none;
@@ -50,8 +38,8 @@ header {
             }
         }
     }
-}
-
-.header-spacer {
-    height: $space-md;
+    .site-info {
+        margin: 0 $list-h-space;
+        font-size: $font-tiny;
+    }
 }

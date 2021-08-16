@@ -61,5 +61,6 @@ $RECYCLE.BIN/
 
 # Webpack build
 dist/
+dev/
 node_modules/
 jspm_packages/

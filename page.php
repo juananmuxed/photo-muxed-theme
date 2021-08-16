@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for front page
+ * The template single page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -8,26 +8,25 @@
  */
 
 get_header();
+
+$options = get_option('photo_muxed_theme_options');
+$reversed = (isset($options['photo_muxed_menu_right'])) ? ' reverse-menu' : '';
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main<?php echo $reversed ?>">
 
 		<?php
+		photo_muxed_get_menu_terms('series', 'lateral_menu');
+
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content', get_post_type() );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
+		endwhile;
 		?>
 
-	</main><!-- #main -->
+	</main>
 
 <?php
-get_sidebar();
 get_footer();

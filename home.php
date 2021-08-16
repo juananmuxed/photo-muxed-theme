@@ -13,10 +13,20 @@
  */
 
 get_header();
+
+photo_muxed_get_slider_home();
+
+$options = get_option('photo_muxed_theme_options');
+$reversed = (isset($options['photo_muxed_menu_right'])) ? ' reverse-menu' : '';
+
 ?>
 
-	<main id="primary" class="site-main">
-        <div class="background-slider">
-			<img src="https://via.placeholder.com/3000x2000" alt="BKG">
-		</div>
-	</main><!-- #main -->
+	<main id="primary" class="site-main<?php echo $reversed ?>">
+
+		<?php 
+			photo_muxed_get_menu_terms('series', 'lateral_menu');
+		?>
+		
+	</main>
+
+<?php get_footer();

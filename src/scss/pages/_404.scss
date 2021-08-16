@@ -1,0 +1,24 @@
+section.not-found{
+    padding: $list-h-space;
+    margin: 0 auto;
+    min-width: $container-size;
+    text-align: center;
+    h1 {
+        font-size: $font-big-size;
+        text-transform: uppercase;
+    }
+    .page-content {
+        .not-found{
+            font-size: $font-extra-size;
+        }
+        a {
+            text-decoration: none;
+            color: $gray-800;
+            padding: $list-h-space;
+            font-size: $font-h2;
+            &:hover {
+                color: $gray-600;
+            }
+        }
+    }
+}

@@ -140,18 +140,45 @@ add_action( 'widgets_init', 'photo_muxed_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function photo_muxed_scripts() {
-	wp_enqueue_style( 'photo-muxed-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'photo-muxed-bundle', get_template_directory_uri() . '/dist/css/bundle.css', array(), _S_VERSION );
 
-	wp_enqueue_script( 'photo-muxed-common', get_template_directory_uri() . '/dist/js/common.js', array(), _S_VERSION, true );
+
+function photo_muxed_scripts() {
+	$enviorement_folder = '/dist/';
+	$minify = '.min';
+	$enviorement_type = wp_get_environment_type();
+	if($enviorement_type == 'local' || $enviorement_type == 'development') {
+		$enviorement_folder = '/dev/';
+		$minify = '';
+	};
+	wp_enqueue_style( 'photo-muxed-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'photo-muxed-bundle', get_template_directory_uri() . $enviorement_folder . 'css/bundle' . $minify . '.css', array(), _S_VERSION );
+
+	wp_enqueue_script( 'photo-muxed-common', get_template_directory_uri() . $enviorement_folder . 'js/common' . $minify . '.js', array(), _S_VERSION, true );
+	
+	if( is_front_page() && is_home() ) {
+		wp_enqueue_script( 'photo-muxed-home', get_template_directory_uri() . $enviorement_folder . 'js/home' . $minify . '.js', array(), _S_VERSION, true );
+	}
+
+	if( is_archive() ) {
+		wp_enqueue_script( 'photo-muxed-home', get_template_directory_uri() . $enviorement_folder . 'js/archives' . $minify . '.js', array(), _S_VERSION, true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'photo_muxed_scripts' );
 
 /**
- * Implement the Custom Header feature.
+ * Add menu settings
  */
-require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-menu-page.php';
+
+/**
+ * Add Custom Post Types for Series and Slides
+ */
+require get_template_directory() . '/inc/custom-post-types.php';
+
+/**
+ * Add Custom Meta Boxes
+ */
+require get_template_directory() . '/inc/custom-meta-boxes.php';
 
 /**
  * Custom template tags for this theme.
@@ -167,13 +194,6 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
 
 /**
  * Load WooCommerce compatibility file.

@@ -1,0 +1,25 @@
+#lateral_menu {
+    width: 35%;
+    font-size: calc(1.25rem + .8vw);
+    color: $gray-600;
+    mix-blend-mode: luminosity;
+    ul {
+        list-style-type: none;
+        padding: 0 $padding-lg;
+        li {
+            padding: 6px 0;
+            word-break: break-all;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $gray-600;
+        &:hover {
+            color: $gray-400;
+            mix-blend-mode: luminosity;
+        }
+    }
+    &.reverse {
+        text-align: right;
+    }
+}

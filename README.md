@@ -6,7 +6,7 @@ Customized portfolio theme for Photographers created with [Underscore](https://u
 
 To develop the code
 ```bash
-cd wp-content/themes/escuela-memoria
+cd wp-content/themes/photo-muxed-theme
 npm install
 npm run watch
 ```
@@ -25,10 +25,6 @@ Change to something like this before edit:
 git checkout -b nameOfBranch
 ```
 
-# Custom Post Types for Portfolio
-
-Created for add a CPT to custom Portfolio themes
-
 ## Install
 
 Download zip and uncompressed in the `themes` WP folder.
@@ -39,7 +35,7 @@ git clone https://github.com/juananmuxed/photo-muxed-theme.git
 ```
 
 ## Activate
-Go to Theme and Activate this theme. It just add a Custom Post Types
+Go to Theme and Activate this theme.
 
 ## ☕️ Buy Me a Coffee
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U21M2BE)

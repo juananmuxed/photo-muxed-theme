@@ -20,3 +20,202 @@ msgstr ""
 #. Theme URI of the theme
 msgid "https://muxed.es/"
 msgstr ""
+
+#. Strings
+msgid "Page not found"
+msgstr ""
+
+msgid "Back to home"
+msgstr ""
+
+msgid "Top Menu"
+msgstr ""
+
+msgid "Footer Menu"
+msgstr ""
+
+msgid "Sidebar"
+msgstr ""
+
+msgid "Add widgets here."
+msgstr ""
+
+msgid "Design with ❤️ by %1$s"
+msgstr ""
+
+msgid "Theme Options"
+msgstr ""
+
+msgid "Photo Muxed Theme Options"
+msgstr ""
+
+msgid "Created by"
+msgstr ""
+
+msgid "Slider options"
+msgstr ""
+
+msgid "Timeout for every slide"
+msgstr ""
+
+msgid "Timeout (ms)"
+msgstr ""
+
+msgid "Time between photos in slider"
+msgstr ""
+
+msgid "Transition time (ms)"
+msgstr ""
+
+msgid "Controls for slider active"
+msgstr ""
+
+msgid "Controls"
+msgstr ""
+
+msgid "Slides Custom Fields"
+msgstr ""
+
+msgid "Inactive in Home"
+msgstr ""
+
+msgid "See title"
+msgstr ""
+
+msgid "See description"
+msgstr ""
+
+msgid "Photos"
+msgstr ""
+
+msgid "Photo"
+msgstr ""
+
+msgid "Parent Photo"
+msgstr ""
+
+msgid "All Photos"
+msgstr ""
+
+msgid "View Photo"
+msgstr ""
+
+msgid "Add New"
+msgstr ""
+
+msgid "Edit Photo"
+msgstr ""
+
+msgid "Update Photo"
+msgstr ""
+
+msgid "Search Photo"
+msgstr ""
+
+msgid "Not Found"
+msgstr ""
+
+msgid "Not found in Trash"
+msgstr ""
+
+msgid "Series of Media photos"
+msgstr ""
+
+msgid "Sliders"
+msgstr ""
+
+msgid "Slide"
+msgstr ""
+
+msgid "Slider Home"
+msgstr ""
+
+msgid "Parent Slide"
+msgstr ""
+
+msgid "All Slides"
+msgstr ""
+
+msgid "View Slide"
+msgstr ""
+
+msgid "Add New Slide"
+msgstr ""
+
+msgid "Edit Slide"
+msgstr ""
+
+msgid "Update Slide"
+msgstr ""
+
+msgid "Search Slide"
+msgstr ""
+
+msgid "Series of Media slides"
+msgstr ""
+
+msgid "Series"
+msgstr ""
+
+msgid "Serie"
+msgstr ""
+
+msgid "Parent Series"
+msgstr ""
+
+msgid "All Series"
+msgstr ""
+
+msgid "View Series"
+msgstr ""
+
+msgid "Add New Series"
+msgstr ""
+
+msgid "Edit Series"
+msgstr ""
+
+msgid "Update Series"
+msgstr ""
+
+msgid "Search Series"
+msgstr ""
+
+msgid "No term configured."
+msgstr ""
+
+msgid "All slides are without images or inactives"
+msgstr ""
+
+msgid "No slides configured"
+msgstr ""
+
+msgid "Menu options"
+msgstr ""
+
+msgid "Menu right position"
+msgstr ""
+
+msgid "Right menu"
+msgstr ""
+
+msgid "Separator for lateral menu"
+msgstr ""
+
+msgid "Separator menu"
+msgstr ""
+
+msgid "Grid options"
+msgstr ""
+
+msgid "Show title in archive grid"
+msgstr ""
+
+msgid "Show title"
+msgstr ""
+
+msgid "Show description in archive grid"
+msgstr ""
+
+msgid "Show description"
+msgstr ""

@@ -9,6 +9,9 @@
  * @package Photo_MuXeD
  */
 
+$options = get_option('photo_muxed_theme_options');
+$transition_lightbox = (isset($options['photo_muxed_transition_lightbox'])) ? $options['photo_muxed_transition_lightbox'] : 1000;
+$opacity = (isset($options['photo_muxed_overlay_opacity'])) ? $options['photo_muxed_overlay_opacity'] : 1;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -23,6 +26,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+	<div id="overlay" class="open" data-transition-time="<?php echo $transition_lightbox ?>" data-opacity="<?php echo $opacity ?>"></div>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
@@ -31,16 +35,17 @@
 			} else {?>
 			<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 			<?php }?>
-		</div><!-- .site-branding -->
+		</div>
 
 		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
+					'theme_location' => 'header',
+					'menu_id'        => 'header-nav-ul',
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav>
+	</header>
+	<div class="header-spacer"></div>
