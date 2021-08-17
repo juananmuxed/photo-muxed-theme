@@ -15,7 +15,7 @@ $show_desc = (isset($options['photo_muxed_show_desc_grid'])) ? true : false;
 
 <div id="post-<?php the_ID(); ?>" <?php post_class('grid-item'); ?>>
     <div class="container">
-        <?php the_post_thumbnail('large') ?>
+        <?php the_post_thumbnail('medium_large') ?>
         
         <div class="entry-content">
             <?php if( $show_title ) the_title( '<h3 class="entry-title">', '</h3>' ) ?>

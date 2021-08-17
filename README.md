@@ -17,6 +17,28 @@ Return something like this:
     External: http://192.168.1.34:3000
 ```
 
+In wordpress, to work in dev enviorement files you can use this in your `wp-config.php`
+```php
+define( 'WP_ENVIRONMENT_TYPE', 'local' );
+// OR
+define( 'WP_ENVIRONMENT_TYPE', 'development' );
+```
+
+## Production
+To create files you can code:
+```bash
+cd wp-content/themes/photo-muxed-theme
+npm install
+npm run build
+```
+
+And comment or delete this lines: 
+```php
+define( 'WP_ENVIRONMENT_TYPE', 'local' );
+// OR
+define( 'WP_ENVIRONMENT_TYPE', 'development' );
+```
+
 ## 🔴 Remember
 Not work in a `main` branch in Git.
 

@@ -26,7 +26,21 @@ $opacity = (isset($options['photo_muxed_overlay_opacity'])) ? $options['photo_mu
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<div id="overlay" class="open" data-transition-time="<?php echo $transition_lightbox ?>" data-opacity="<?php echo $opacity ?>"></div>
+	<div id="overlay" class="open" data-transition-time="<?php echo $transition_lightbox ?>" data-opacity="<?php echo $opacity ?>">
+		<div class="content">
+			<div class="prev">
+				<span class="dashicons dashicons-arrow-left"></span>
+			</div>
+			<div class="img-wrapper"></div>
+			<div class="next">
+				<span class="dashicons dashicons-arrow-right"></span>
+			</div>
+		</div>
+		<div class="close">
+			<span class="dashicons dashicons-no-alt"></span>
+		</div>
+		<div class="background"></div>
+	</div>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
