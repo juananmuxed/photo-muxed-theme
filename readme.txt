@@ -1,6 +1,6 @@
 === Photo MuXeD ===
 
-Contributors: automattic
+Contributors: MuXeD
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
@@ -10,7 +10,7 @@ Stable tag: 1.0.0
 License: MIT
 License URI: LICENSE
 
-A starter theme called Photo MuXeD.
+A photographer portfolio simple theme Photo MuXeD.
 
 == Description ==
 
@@ -24,13 +24,9 @@ Simple Portfolio Photo
 
 == Frequently Asked Questions ==
 
-= Does this theme support any plugins? =
-
-Photo MuXeD includes support for WooCommerce and for Infinite Scroll in Jetpack.
-
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - Aug 17 2021 =
 * Initial release
 
 == Credits ==

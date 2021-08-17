@@ -64,3 +64,8 @@ dist/
 dev/
 node_modules/
 jspm_packages/
+
+# Compressed Builded
+*.zip
+*.7zip
+*.rar

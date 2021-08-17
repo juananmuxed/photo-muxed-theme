@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
-"PO-Revision-Date: 2021-08-16 11:57+0000\n"
+"PO-Revision-Date: 2021-08-17 11:05+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: photo-muxed\n"
 "Report-Msgid-Bugs-To: \n"
@@ -65,6 +65,9 @@ msgstr "Editar Serie"
 msgid "Edit Slide"
 msgstr "Editar Slide"
 
+msgid "Empty %2$s %1$s"
+msgstr "%1$s %2$s vacía"
+
 msgid "Footer Menu"
 msgstr "Menú en el Pie de Página"
 
@@ -96,6 +99,12 @@ msgstr "No encontrado"
 msgid "Not found in Trash"
 msgstr "No encontrado en la Papelera"
 
+msgid "Opacity for overlay of lightbox"
+msgstr "Opacidad de la ampliación de la galería"
+
+msgid "Overlay opacity"
+msgstr "Opacidad de la galería"
+
 #. Strings
 msgid "Page not found"
 msgstr "Página no encontrada"
@@ -121,6 +130,9 @@ msgstr "photo-muxed"
 
 msgid "Photos"
 msgstr "Fotos"
+
+msgid "Please, add items to the %1$s. Then you can see items here."
+msgstr "Por favor, añade elementos a %1$s. Podrás verlos aquí reflejados."
 
 msgid "Right menu"
 msgstr "Menú a la derecha"
@@ -205,6 +217,9 @@ msgstr "Menú de arriba"
 
 msgid "Transition time (ms)"
 msgstr "Tiempo de transición (ms)"
+
+msgid "Transition time in lightbox"
+msgstr "Tiempo de transición en la galería."
 
 msgid "Update Photo"
 msgstr "Actualizar Foto"

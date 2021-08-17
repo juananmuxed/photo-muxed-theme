@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php
+ * Template part for displaying page content in archive.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -14,6 +14,7 @@ $show_desc = (isset($options['photo_muxed_show_desc_grid'])) ? true : false;
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class('grid-item'); ?>>
+
     <div class="container">
         <?php the_post_thumbnail('medium_large') ?>
         

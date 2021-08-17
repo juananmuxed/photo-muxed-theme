@@ -219,3 +219,18 @@ msgstr ""
 
 msgid "Show description"
 msgstr ""
+
+msgid "Transition time in lightbox"
+msgstr ""
+
+msgid "Opacity for overlay of lightbox"
+msgstr ""
+
+msgid "Overlay opacity"
+msgstr ""
+
+msgid "Empty %2$s %1$s"
+msgstr ""
+
+msgid "Please, add items to the %1$s. Then you can see items here."
+msgstr ""

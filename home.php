@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying home page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -24,7 +24,7 @@ $reversed = (isset($options['photo_muxed_menu_right'])) ? ' reverse-menu' : '';
 	<main id="primary" class="site-main<?php echo $reversed ?>">
 
 		<?php 
-			photo_muxed_get_menu_terms('series', 'lateral_menu');
+			photo_muxed_get_menu_terms('serie', 'lateral_menu');
 		?>
 		
 	</main>

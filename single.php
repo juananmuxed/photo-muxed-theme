@@ -1,6 +1,6 @@
 <?php
 /**
- * The template single page
+ * The template archive single page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

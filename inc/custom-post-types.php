@@ -106,12 +106,12 @@ function custom_post_types() {
     );
     
     // Register the taxonomy
-    register_taxonomy( 'series', array( 'photo' ), array(
+    register_taxonomy( 'serie', array( 'photo' ), array(
         'hierarchical'       => true,
         'labels'             => $labels_series,
         'show_ui'            => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'series' ),
+        'rewrite'            => array( 'slug' => 'serie' ),
     ));
  
 }

@@ -56,7 +56,7 @@ module.exports = {
             { from: './src/img', to: path.join(finalPath, '/images'), force: true },
         ]),
         new MiniCssExtractPlugin({
-            filename: './css/[name].css',
+            filename: './css/[name].min.css',
         }),
         new IgnoreEmitPlugin(['bundle.min.js'])
 
